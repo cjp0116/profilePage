@@ -58,6 +58,7 @@ h1 {
 }
 
 section {
+  padding-top: 2rem;
   margin-top: 50%;
   height: 100vh;
 }
