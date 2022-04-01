@@ -1,7 +1,8 @@
 import React from "react";
 import "./experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
-
+import { FaServer, FaDatabase, FaLaptop } from 'react-icons/fa';
+import { frontendData, backendData, databaseData } from "../../data";
 const Experience = () => {
   return (
     <section id="experience">
@@ -10,108 +11,51 @@ const Experience = () => {
 
       <div className="container experience__container">
         <div className="experience__frontend">
-          <h3>Frontend Development</h3>
+          <h3>Frontend Development  <FaLaptop /></h3>
+
           <div className="experience__content">
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>HTML</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>CSS</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>JavaScript</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Redux</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Webpack</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>ReactJS</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
+            {frontendData.map(({ id, title, skillLevel }) => (
+              <article className="experience__details" key={id}>
+                <BsPatchCheckFill className="experience__details-icon" />
+                <div>
+                  <h4>{title}</h4>
+                  <small className="text-light">{skillLevel}</small>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
 
         <div className="experience__backend">
-          <h3>Backend Development</h3>
+          <h3>Backend Development  <FaServer /></h3>
           <div className="experience__content">
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Flask</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
+            {backendData.map(({ id, title, skillLevel }) => (
+              <article className="experience__details" key={id}>
+                <BsPatchCheckFill className="experience__details-icon" />
+                <div>
+                  <h4>{title}</h4>
+                  <small className="text-light">{skillLevel}</small>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
 
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>NodeJS</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
 
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>ExpressJS</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>MySQL</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>PostgreSQL</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>REST API</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
+        <div className="experience__backend">
+          <h3>
+            Databases <FaDatabase />
+          </h3>
+          <div className="experience__content">
+            {databaseData.map(({ id, title, skillLevel }) => (
+              <article className="experience__details" key={id}>
+                <BsPatchCheckFill className="experience__details-icon" />
+                <div>
+                  <h4>{title}</h4>
+                  <small className="text-light">{skillLevel}</small>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </div>

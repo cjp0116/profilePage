@@ -1,8 +1,6 @@
 import React from "react";
 import {
-  BsInstagram,
   BsFacebook,
-  BsTwitter,
   BsGithub,
   BsLinkedin,
 } from "react-icons/bs";
@@ -28,7 +26,7 @@ const Footer = () => {
           <a href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <a href="#services">Services</a>
+          <a href="#services">Skills</a>
         </li>
         <li>
           <a href="#contact">Contact</a>

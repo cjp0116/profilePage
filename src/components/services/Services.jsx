@@ -6,97 +6,86 @@ const Services = () => {
   return (
     <section id="services">
       <h5>What I Offer</h5>
-      <h2>Services</h2>
+      <h2>Technical Skills</h2>
       <div className="services__container container">
         <article className="service">
+
           <div className="service__head">
-            <h3>UI/UX Design</h3>
+            <h3>Languages</h3>
           </div>
 
           <ul className="service__list">
             <li>
               <BsCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>JavaScript</p>
             </li>
             <li>
               <BsCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Python</p>
             </li>
             <li>
               <BsCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BsCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BsCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>PHP</p>
             </li>
           </ul>
         </article>
-        {/* END OF UI/UX */}
+        {/* END OF Languages*/}
 
         <article className="service">
           <div className="service__head">
-            <h3>Web Development</h3>
+            <h3>Concepts</h3>
           </div>
 
           <ul className="service__list">
             <li>
               <BsCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Object Oriented Design</p>
             </li>
             <li>
               <BsCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Test Driven Development</p>
             </li>
             <li>
               <BsCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Continuous Development</p>
             </li>
             <li>
               <BsCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Continuous Integration</p>
             </li>
             <li>
               <BsCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Scalable Architecture</p>
             </li>
           </ul>
         </article>
-        {/* END OF Web Development */}
+        {/* END of concepts */}
 
         <article className="service">
           <div className="service__head">
-            <h3>Content Creation</h3>
+            <h3>Cloud Technologies</h3>
           </div>
 
           <ul className="service__list">
             <li>
               <BsCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>AWS (EC2, VPC, RDS, S3, Route53).</p>
             </li>
             <li>
               <BsCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Heroku</p>
             </li>
             <li>
               <BsCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Google App Engine</p>
             </li>
             <li>
               <BsCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BsCheck className="service__list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Serverless Architecture</p>
             </li>
           </ul>
         </article>
-        {/* Content Creation */}
+        {/* Cloud */}
       </div>
     </section>
   );

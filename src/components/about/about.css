@@ -72,6 +72,9 @@
 
 /* ******************** MEDIA (MEDIUM DEVICES) ****************/
 @media screen and (max-width: 1024px) {
+  section#about {
+    height : 140vh;
+  }
   .about__container {
     grid-template-columns: 1fr;
     gap: 0;

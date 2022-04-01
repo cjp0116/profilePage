@@ -6,6 +6,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { FaFacebookMessenger } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
+
 const Contact = () => {
   const form = useRef();
   const sendEmail = async (e) => {
@@ -40,7 +41,7 @@ const Contact = () => {
             <FaFacebookMessenger className="contact__option-icon" />
             <h4>Messenger</h4>
             <h5>Jae Cho</h5>
-            <a href="https://m.me/jae.cho.12/" target="_blank">
+            <a href="https://m.me/jae.cho.12/" target="_blank" rel="noreferrer">
               Send a message
             </a>
           </article>
@@ -51,6 +52,7 @@ const Contact = () => {
             <a
               target="_blank"
               href="https://api.whatsapp.com/send?phone=2132483654"
+              rel="noreferrer"
             >
               Send a message
             </a>
@@ -62,6 +64,7 @@ const Contact = () => {
             <a
               target="_blank"
               href="https://www.linkedin.com/in/jae-cho-60171a15a/"
+              rel="noreferrer"
             >
               Send Invitation or Message
             </a>
