@@ -39,9 +39,9 @@ const About = () => {
           </div>
 
           <p>
-            Est invidunt vulputate consectetuer tempor nonumy est ea vel et duo
-            accumsan nonumy tempor amet voluptua vero sea cum nibh sanctus diam
-            est gubergren et lorem consetetur eos diam tincidunt
+            I am a fullstack developer with background in systems administration, and network administrations.
+            After my service in the Marine Corps as an data systems administrator, I've naturally gravitated towards the tech industry.
+            I'm looking forward to combining my previous experiences with programming skills to be able to contribute to the team! :)
           </p>
 
           <a href="#contact" className="btn btn-primary">
