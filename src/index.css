@@ -58,7 +58,8 @@ h1 {
 }
 
 section {
-  margin-top: 8rem;
+  margin-top: 50%;
+  height: 100vh;
 }
 
 /* direct child of section's h2 and h5*/

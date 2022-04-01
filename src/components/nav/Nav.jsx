@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./nav.css";
 import {
   AiOutlineHome,
@@ -7,22 +7,44 @@ import {
 } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { BsBriefcase } from "react-icons/bs";
+
 const Nav = () => {
+  const [activeNav, setActiveNav] = useState("#");
   return (
     <nav>
-      <a href="#">
+      <a
+        onClick={() => setActiveNav("#")}
+        href="#"
+        className={activeNav === "#" && "active"}
+      >
         <AiOutlineHome />
       </a>
-      <a href="#about">
+      <a
+        onClick={() => setActiveNav("#about")}
+        href="#about"
+        className={activeNav === "#about" && "active"}
+      >
         <AiOutlineUser />
       </a>
-      <a href="#experience">
+      <a
+        onClick={() => setActiveNav("#experience")}
+        href="#experience"
+        className={activeNav === "#experience" && "active"}
+      >
         <BiBook />
       </a>
-      <a href="#portfolio">
+      <a
+        onClick={() => setActiveNav("#portfolio")}
+        href="#portfolio"
+        className={activeNav === "#portfolio" && "active"}
+      >
         <BsBriefcase />
       </a>
-      <a href="#contact">
+      <a
+        onClick={() => setActiveNav("#contact")}
+        href="#contact"
+        className={activeNav === "#contact" && "active"}
+      >
         <AiOutlineContacts />
       </a>
     </nav>
