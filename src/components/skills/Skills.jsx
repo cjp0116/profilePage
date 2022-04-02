@@ -1,8 +1,8 @@
 import React from "react";
-import "./services.css";
+import "./skills.css";
 import { BsCheck } from "react-icons/bs";
 
-const Services = () => {
+const Skills = () => {
   return (
     <section id="services">
       <h5>What I Offer</h5>
@@ -86,9 +86,34 @@ const Services = () => {
           </ul>
         </article>
         {/* Cloud */}
+
+        <article className="service">
+          <div className="service__head">
+            <h3>Network Systems Infrastructure</h3>
+          </div>
+          <ul className="service__list">
+            <li>
+              <BsCheck className="service__list-icon" />
+              <p>Infrastructure Hardening.</p>
+            </li>
+            <li>
+              <BsCheck className="service__list-icon" />
+              <p>ACLs, Firewalls, IPS/IDS</p>
+            </li>
+            <li>
+              <BsCheck className="service__list-icon" />
+              <p>SSH</p>
+            </li>
+            <li>
+              <BsCheck className="service__list-icon" />
+              <p>DNS, QoS, SSL</p>
+            </li>
+          </ul>
+        </article>
+        {/* Systems and infrastructure */}
       </div>
     </section>
   );
 };
 
-export default Services;
+export default Skills;

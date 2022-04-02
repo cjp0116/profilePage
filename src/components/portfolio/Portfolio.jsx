@@ -2,9 +2,6 @@ import React from "react";
 import "./portfolio.css";
 import { portFolioData } from "../../data";
 
-
-
-
 const Portfolio = () => {
   return (
     <section id="portfolio">
@@ -19,10 +16,10 @@ const Portfolio = () => {
             </div>
             <h3>{title}</h3>
             <div className="portfolio__item-cta">
-              <a href={github} className="btn" target="_blank">
+              <a href={github} className="btn" target="_blank" rel="noreferrer">
                 Github
               </a>
-              <a target="_blank" href={demo} className="btn btn-primary">
+              <a target="_blank" href={demo} className="btn btn-primary" rel="noreferrer">
                 Live Demo
               </a>
             </div>
