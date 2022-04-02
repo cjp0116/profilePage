@@ -41,7 +41,6 @@ const Experience = () => {
           </div>
         </div>
 
-
         <div className="experience__backend">
           <h3>
             Databases <FaDatabase />
