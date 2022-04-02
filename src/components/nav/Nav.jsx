@@ -15,35 +15,35 @@ const Nav = () => {
       <a
         onClick={() => setActiveNav("#")}
         href="#"
-        className={activeNav === "#" && "active"}
+        className={activeNav === "#" ? "active" : undefined}
       >
         <AiOutlineHome />
       </a>
       <a
         onClick={() => setActiveNav("#about")}
         href="#about"
-        className={activeNav === "#about" && "active"}
+        className={activeNav === "#about" ? "active" : undefined}
       >
         <AiOutlineUser />
       </a>
       <a
         onClick={() => setActiveNav("#experience")}
         href="#experience"
-        className={activeNav === "#experience" && "active"}
+        className={activeNav === "#experience" ? "active" : undefined}
       >
         <BiBook />
       </a>
       <a
         onClick={() => setActiveNav("#portfolio")}
         href="#portfolio"
-        className={activeNav === "#portfolio" && "active"}
+        className={activeNav === "#portfolio" ? "active" : undefined}
       >
         <BsBriefcase />
       </a>
       <a
         onClick={() => setActiveNav("#contact")}
         href="#contact"
-        className={activeNav === "#contact" && "active"}
+        className={activeNav === "#contact" ? "active" : undefined}
       >
         <AiOutlineContacts />
       </a>
